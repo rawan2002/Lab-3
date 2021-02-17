@@ -159,6 +159,17 @@ E4. Convert your side-by-side box plots from the previous task to
 What do the violin plots reveal that box plots do not? What features are
 apparent in the box plots but not in the violin plots?
 
+``` r
+ggplot(data = plastic_waste,
+mapping = aes(x = continent,
+y = plastic_waste_per_cap)) + geom_violin()
+```
+
+Answer: box plots provide corser summry of the data , provide more of a
+summary of a distribution can also be seen as an advantage in certain
+cases , also the point in the Graph or mapping It is most clearly than
+violin plots.
+
 **Remember:** We use `geom_point()` to make scatterplots.
 
 E5. Visualize the relationship between plastic waste per capita and
@@ -194,7 +205,7 @@ use](https://ggplot2.tidyverse.org/reference/index.html#section-geoms).
 E8. Recreate the following plot, and interpret what you see in context
 of the data.
 
-![](lab-3-plastic-waste_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
+![](lab-3-plastic-waste_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
 
 Knit, *commit (with an appropriate message), and push your changes to
 GitHub with an appropriate commit message. Make sure to commit and push
