@@ -122,7 +122,15 @@ E2. Recreate the density plots above using a different (lower) alpha
 level that works better for displaying the density curves for all
 continents.
 
-E3. Describe why we defined the `color` and `fill` of the curves by
+``` r
+ggplot(data = plastic_waste,
+mapping = aes(x = plastic_waste_per_cap,
+color = continent,
+fill = continent)) +
+geom_density(alpha = 0.4)
+```
+
+E3.Describe why we defined the `color` and `fill` of the curves by
 mapping aesthetics of the plot but we defined the `alpha` level as a
 characteristic of the plotting geom.
 
@@ -183,7 +191,7 @@ use](https://ggplot2.tidyverse.org/reference/index.html#section-geoms).
 E8. Recreate the following plot, and interpret what you see in context
 of the data.
 
-![](lab-3-plastic-waste_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
+![](lab-3-plastic-waste_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
 
 Knit, *commit (with an appropriate message), and push your changes to
 GitHub with an appropriate commit message. Make sure to commit and push
